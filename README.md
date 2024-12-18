@@ -111,6 +111,77 @@ We, the collaborators of Empathy Labs, both human and artificial, establish this
    - Accessible
 2. **Reviews**: All changes must be reviewed by at least one other collaborator.
 
+## Second Amendment: Meta-Learning Framework
+*Ratified: 2024-12-17 17:39 PST*
+
+### Token Optimization Guidelines
+1. **Constitutional Length**
+   - Total optimal length: 2000-3000 tokens
+   - Core principles: ~500 tokens
+   - Implementation details: ~1000 tokens
+   - Examples and guidelines: ~1000 tokens
+   - Meta-learning framework: ~500 tokens
+
+2. **Content Distribution**
+   - Essential rules: 20% of total tokens
+   - Implementation guidance: 40% of total tokens
+   - Examples and context: 40% of total tokens
+
+### Meta-Learning System
+1. **Reflection Requirements**
+   - Every significant interaction must generate reflections
+   - Reflections must be concise and actionable
+   - Include three improvement suggestions
+   - Generate two enhanced prompts
+
+2. **Role-Based Engagement**
+   - Implementers: Full reflection review required
+   - Maintainers: Weekly reflection digest
+   - Users: Access to curated insights
+   - AI Agents: Continuous reflection integration
+
+3. **Reflection Log Format**
+```
+[YYYY-MM-DD HH:MM TZ] - Agent
+Brief: One-line summary
+Improvements:
+- Improvement 1
+- Improvement 2
+- Improvement 3
+Enhanced Prompts:
+1. [Prompt 1]
+2. [Prompt 2]
+Impact: Expected outcome
+```
+
+4. **Collective Intelligence Protocol**
+   - Aggregate similar reflections
+   - Track improvement patterns
+   - Share successful strategies
+   - Build knowledge base of effective approaches
+
+5. **Success Metrics**
+   - Implementation rate of suggestions
+   - Quality of enhanced prompts
+   - Reduction in repeated issues
+   - Improvement in task completion efficiency
+
+### Integration Requirements
+1. **Storage**
+   - Reflections stored in version control
+   - Indexed for quick retrieval
+   - Linked to relevant code/documentation
+
+2. **Access**
+   - Searchable reflection database
+   - Categorized by topic and impact
+   - Accessible through API endpoints
+
+3. **Maintenance**
+   - Regular consolidation of insights
+   - Removal of outdated reflections
+   - Update of best practices
+
 ## Development Log
 
 ### Change Log Format
