@@ -46,7 +46,7 @@ CASE_OS/
 ### 1. Core Functionalities
 
 #### Authentication & User Management
-- Handle user authentication through NextAuth
+- Handle user authentication through Clerk 
 - Manage user profiles and permissions
 - Track user sessions and activity
 

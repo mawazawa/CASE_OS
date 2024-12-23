@@ -1,6 +1,6 @@
-import { authMiddleware } from "@clerk/nextjs";
+import { clerkMiddleware } from "@clerk/nextjs";
  
-export default authMiddleware({
+export default clerkMiddleware({
   // Routes that can be accessed while signed out
   publicRoutes: ["/", "/pricing"],
   // Routes that can always be accessed, and have

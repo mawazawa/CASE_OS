@@ -49,6 +49,84 @@ graph TB
 - Custom ML Model
 - Rule-based Mapping
 
+## Implementation Details
+
+### Vercel Blob Integration
+- **Storage Strategy**: Using Vercel Blob for scalable image storage
+  - Supports files up to 5TB
+  - Global CDN distribution
+  - Automatic content-type detection
+  - Built-in security headers
+
+### Database Configuration
+- **Provider**: Neon PostgreSQL (Serverless)
+- **Connection Types**:
+  - Pooled Connection (Default): Uses pgbouncer for connection pooling
+  - Non-Pooled Connection: Direct database access
+  - SSL and Non-SSL options available
+
+```mermaid
+graph TB
+    subgraph "Database Architecture"
+        PG[PostgreSQL]
+        PB[PgBouncer]
+        APP[Application]
+        
+        APP -->|Pooled| PB
+        PB -->|Managed| PG
+        APP -->|Direct| PG
+    end
+```
+
+### Connection Details
+- **Host**: `ep-ancient-shadow-a4e2jl1h-pooler.us-east-1.aws.neon.tech`
+- **Database**: `verceldb`
+- **User**: `default`
+- **Region**: `us-east-1`
+- **Features**:
+  - Connection Pooling
+  - SSL Enabled
+  - Auto-scaling
+  - Point-in-time Recovery
+
+### Integration Points
+1. Evidence Storage:
+   - Image metadata
+   - Processing results
+   - Form field mappings
+2. User Session Management:
+   - Upload history
+   - Processing status
+   - Access controls
+
+### Configuration Steps
+1. Environment Setup:
+   ```env
+   BLOB_READ_WRITE_TOKEN=vercel_blob_rw_token
+   ```
+   - Token scoped to project environment
+   - Auto-configured in Vercel deployment
+   - Local development requires manual configuration
+
+2. Image Upload Flow:
+   ```mermaid
+   sequenceDiagram
+       participant C as Camera
+       participant B as Blob Storage
+       participant G as Gemini Vision
+       
+       C->>B: Capture & Upload
+       Note over B: Store with unique ID
+       B->>G: Process Image
+       G->>B: Return Analysis
+   ```
+
+3. Security Considerations:
+   - Content-Security-Policy headers
+   - Automatic file type verification
+   - Rate limiting on uploads
+   - Secure URL generation
+
 ## Progress Log
 
 ### [2024-12-17 23:50 PST] - Environment Setup
@@ -97,7 +175,6 @@ const CameraTest = () => {
     }
   };
 };
-```
 
 ## Success Criteria
 - Camera capture < 2s

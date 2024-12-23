@@ -4,8 +4,8 @@
 Create a proof-of-concept multimodal form assistant that guides users through form completion using voice, camera, and natural conversation.
 
 ## Sprint Duration
-Start: 2023-12-17 22:44 PST
-End: 2023-12-24 22:44 PST
+Start: 2024-12-17 22:44 PST
+End: 2024-12-24 22:44 PST
 
 ## User Stories
 
