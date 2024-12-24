@@ -1,4 +1,6 @@
 {
     "workbench.editor.highlightModifiedTabs": true,
-    "workbench.editor.pinnedTabsOnSeparateRow": true
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "WillLuke.nextjs.addTypesOnSave": true,
+    "WillLuke.nextjs.hasPrompted": true
 }
